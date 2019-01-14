@@ -1,0 +1,22 @@
+﻿  main.cpp
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(30): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(47): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(56): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(56): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(82): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(110): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(130): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(161): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(199): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(219): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+d:\fpt\prf192\c lab (dat)\ptb2_laisuatnganhang\ptb2_laisuatnganhang\main.cpp(246): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: see declaration of 'scanf'
+  PTB2_LaiSuatNganHang.vcxproj -> D:\FPT\PRF192\C lab (Dat)\PTB2_LaiSuatNganHang\Debug\PTB2_LaiSuatNganHang.exe
