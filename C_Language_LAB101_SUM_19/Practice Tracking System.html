@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://10.22.127.127/Practice/Manage -->
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Practice Tracking System</title>
+    <link href="./Practice Tracking System_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Practice Tracking System_files/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="./Practice Tracking System_files/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="./Practice Tracking System_files/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Practice Tracking System_files/AdminLTE.min.css">
+    <link rel="stylesheet" href="./Practice Tracking System_files/_all-skins.css">
+    <link href="./Practice Tracking System_files/toastr.min.css" rel="stylesheet">
+
+    <link href="./Practice Tracking System_files/site.css" rel="stylesheet">
+    
+    <link href="./Practice Tracking System_files/select.bootstrap.min.css" rel="stylesheet">
+    <link href="./Practice Tracking System_files/rowReorder.bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="./Practice Tracking System_files/bootstrap-chosen.css" rel="stylesheet">
+    <link href="./Practice Tracking System_files/bootstrap-duallistbox.min.css" rel="stylesheet">
+    <script src="./Practice Tracking System_files/modernizr"></script>
+
+    <script src="./Practice Tracking System_files/jquery"></script>
+
+    <script src="./Practice Tracking System_files/jquery.slimscroll.min.js"></script>
+    <script src="./Practice Tracking System_files/app.js"></script>
+
+
+    <link href="./Practice Tracking System_files/customAdmin.css" rel="stylesheet">
+
+</head>
+
+<body class="skin-blue sidebar-mini fixed sidebar-collapse">
+    <div id="wrapper" class="wrapper">
+        
+
+
+<!-- Navigation -->
+<header class="main-header">
+    <!-- Logo -->
+    <a href="http://10.22.127.127/" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>PTS</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg" style="font-size:16px;font-weight:bold">Practice Tracking System</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="http://10.22.127.127/Practice/Manage#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li style="display:none;">
+                    <a href="http://10.22.127.127/Student/GradeTable"> <i class="fa fa-list"></i> Grade Book</a>
+                </li>
+
+                <li class="dropdown user user-menu">
+                    <a href="http://10.22.127.127/Practice/Manage#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        
+                        <i class="fa fa-user"></i>
+                        <span class="hidden-xs text-bold text-lime">Nguyễn Huy Thành</span>
+                    </a>
+                   
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                            <img src="./Practice Tracking System_files/no-photo.png" class="img-circle" alt="User Image">
+                            <p>
+                                Nguyễn Huy Thành
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-left">
+                            </div>
+                            
+                            <div class="pull-right">
+                                
+                                
+<form action="http://10.22.127.127/Account/LogOff" id="logoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="aWMUYL_O6-LIOfaDfKthCQIKvS8HWDoSXpukAC_5LC2NRHyYI05_sGqCyDwqGsgSlASxOUyrqCGaUsbema23VG9Or4Y44agRX4LnSIji0dZ3wKJapw3wIqRlrR-sdc3j0">                                    <a href="javascript:document.getElementById(&#39;logoutForm&#39;).submit()" class="btn btn-default btn-flat"> Logout</a>
+</form>                            </div>
+                        </li>
+                    </ul>
+                   
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- /.navbar-header -->
+
+<aside class="main-sidebar">
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 573px;"><section class="sidebar" style="height: 573px; overflow: hidden; width: auto;">
+        <div class="user-panel">
+            <div class="image">
+                <img class="center-block" src="./Practice Tracking System_files/logo.png" alt="FPT University" style="max-width:160px;">
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+
+            
+
+            <li class="treeview" style="display:none">
+                <a href="http://10.22.127.127/ClassTracking">
+                    <i class="fa fa-table fa-fw"></i>
+                    <span>Class Tracking</span>
+                </a>
+            </li>
+            <li class="treeview" style="display:none">
+                <a href="http://10.22.127.127/Assignment">
+                    <i class="fa fa-newspaper-o fa-fw"></i>
+                    <span>Assignment</span>
+                </a>
+            </li>
+            
+            
+
+                <li style="">
+
+                    <a href="http://10.22.127.127/Practice">
+                        <i class="fa fa-edit fa-fw"></i>
+                        <span>Assignments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://10.22.127.127/Practice/Ranking">
+                        <i class="fa fa-circle-o"></i>
+                        <span>Ranking</span>
+                    </a>
+                </li>
+
+            
+            <li style="display:none">
+                <a href="http://10.22.127.127/Practice/Manage#">
+                    <i class="fa fa-pie-chart fa-fw"></i>
+                    <span>Reports</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="http://10.22.127.127/Report/Summary">
+                            <i class="fa fa-circle-o"></i>
+                            Summary
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Report/ProcessExportReport">
+                            <i class="fa fa-circle-o"></i>
+                            Export Report
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Report/Assignment">
+                            <i class="fa fa-circle-o"></i>
+                            Assignment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Report/Rank">
+                            <i class="fa fa-circle-o"></i>
+                            Student Rank
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Report/StudentProgress">
+                            <i class="fa fa-circle-o"></i>
+                            Student Progress
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Practice/Manage#">
+                            <i class="fa fa-circle-o"></i>
+                            Export Data For SMS
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="http://10.22.127.127/Report/StudentInSystem" title="Export Student In System">
+                                    <i class="fa fa-circle-o"></i>
+                                    Student In System
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://10.22.127.127/Report/DetailStudentMark" ti="" title="Export Detail Student Mark">
+                                    <i class="fa fa-circle-o"></i>
+                                    Detail Student Mark
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+
+
+            <li style="display:none">
+                <a href="http://10.22.127.127/Practice/Manage#">
+                    <i class="fa fa-wrench fa-fw"></i>
+                    <span>Administration</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li style="display:none">
+                        <a href="http://10.22.127.127/Batch" title="Batch Management">
+                            <i class="fa fa-circle-o"></i>
+                            Batch
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Term" title="Term Management">
+                            <i class="fa fa-circle-o"></i>
+                            Term
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Class" title="Class Management">
+                            <i class="fa fa-circle-o"></i>
+                            Class
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/User" title="User Management">
+                            <i class="fa fa-circle-o"></i>
+                            User
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://10.22.127.127/Group" title="Group Management">
+                            <i class="fa fa-circle-o"></i>
+                            Group
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://10.22.127.127/VDI" title="VDI Management">
+                            <i class="fa fa-circle-o"></i>
+                            VDI
+                        </a>
+                    </li>
+                    <li style="display:none">
+                        <a href="http://10.22.127.127/Practice/Manage#">
+                            <i class="fa fa-circle-o"></i>
+                            Setting
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a href="http://10.22.127.127/GeneralSetting" title="General Settings">
+                                    <i class="fa fa-circle-o"></i>
+                                    General Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://10.22.127.127/RankSetting" ti="" title="Rank Settings">
+                                    <i class="fa fa-circle-o"></i>
+                                    Rank Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="display:none">
+                        <a href="http://10.22.127.127/Audit" title="Audit Logs">
+                            <i class="fa fa-circle-o"></i>
+                            Audit Logs
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+        </ul>
+    </section><div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 573px; background: rgba(0, 0, 0, 0.2);"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+    <!-- /.navbar-static-side -->
+</aside>
+
+        <div class="content-wrapper" style="min-height: 623px;">
+            
+
+
+<section class="content-header">
+    <h1>
+        <i class="fa fa-signal"></i> Manage <small>  </small>
+    </h1>
+    <ul class="breadcrumb">
+        <li><a href="http://10.22.127.127/"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="http://10.22.127.127/Practice">Practice</a></li>
+        <li>Manage</li>
+    </ul>
+</section>
+
+<section class="content">
+    <p class="text-right btn-grid-group">
+        <a class="btn btn-default btn-view" href="http://10.22.127.127/Practice" title="Back to List">
+            <i class="fa fa-chevron-circle-left"></i>
+            Back to List
+        </a>
+    </p>
+    <div class="row" id="currentAssignments">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="col-sm-12 no-padding">
+                        <h3 class="box-title">
+                            <i class="fa fa-list"></i>
+                            Current Assignments
+                        </h3>
+                    </div>
+                </div>
+                <div class="box-body">
+<form action="http://10.22.127.127/" id="frmDelete" method="post"><input name="__RequestVerificationToken" type="hidden" value="3if2EwQkzslnyDsiZIMHqeoLlU3yY4X4h_IXmdzsptcU-1A_w9EaYEtsaxeWLQlaPG-qjBU5cEznW2w1ZEBtyrKY5T8MRRhQPfXHv_lD2QPtFyqZF06NsYh-SU-_0s740"><input id="studentAssignmentId" name="id" type="hidden" value=""></form>                    <div class="row">
+                        <div class="col-sm-12">
+                            <form id="frmFilter">
+                                <div id="dtCurrentAssignment_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><table class="table table-striped table-bordered table-hover dataTable no-footer dtr-inline" id="dtCurrentAssignment" role="grid" style="position: relative;">
+                                    <thead class="student-assignment-display">
+                                        <tr role="row"><th class="all text-right sorting_asc" tabindex="0" aria-controls="dtCurrentAssignment" rowspan="1" colspan="1" aria-label="#: activate to sort column descending" aria-sort="ascending">#</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Topic">Topic</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Assignment Name">Assignment Name</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Assignment Code">Assignment Code</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Category">Category</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Line of Code">Line of Code</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Slots">Slots</th><th class="all sorting_disabled" rowspan="1" colspan="1" aria-label="Actions">Actions</th></tr>
+                                    </thead>
+                                    <tbody class="student-assignment-display"><tr class="odd"><td valign="top" colspan="8" class="dataTables_empty">No data available in table</td></tr></tbody>
+                                </table><div id="dtCurrentAssignment_processing" class="dataTables_processing panel panel-default" style="display: none;">Processing...</div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="availableAssignments">
+        <div class="col-md-12">
+            <div class="box box-info">
+                <form id="frmFilter">
+                    <div class="box-header with-border">
+                        <div class="col-sm-12 no-padding">
+                            <h3 class="box-title">
+                                <i class="fa fa-list"></i>
+                                Select assignments to add
+                            </h3>
+                            <div class="pull-right">
+                                <button type="reset" class="btn btn-sm btn-default" id="btnClearFilter">Clear Filter</button>
+                                <button type="button" class="btn btn-sm btn-warning" id="btnSelectNone">Select None</button>
+                                <button type="button" class="btn btn-sm btn-primary" id="btnSelectAll">Select All</button>
+                                <button type="button" class="btn btn-sm btn-success" id="btnAddSelected">Add Selected</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 table-responsive">
+
+                            <div id="dtAddAssignment_wrapper" class="dataTables_wrapper form-inline dt-bootstrap"><table class="table table-striped table-bordered table-hover dataTable no-footer" id="dtAddAssignment" role="grid">
+                                <thead class="student-assignment-display">
+                                    <tr role="row"><th class="text-right sorting_disabled" rowspan="1" colspan="1" aria-label="#">#</th><th class="sorting" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-label="Topic: activate to sort column ascending">Topic</th><th class="sorting" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-label="Assignment Name: activate to sort column ascending">Assignment Name</th><th class="sorting_asc" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Assignment Code: activate to sort column descending">Assignment Code</th><th class="sorting" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">Category</th><th class="sorting" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-label="Line of Code: activate to sort column ascending">Line of Code</th><th class="sorting" tabindex="0" aria-controls="dtAddAssignment" rowspan="1" colspan="1" aria-label="Slots: activate to sort column ascending">Slots</th><th class="sorting_disabled" rowspan="1" colspan="1" aria-label=""></th></tr><tr><td class="text-right" rowspan="1" colspan="1">&nbsp;</td><td rowspan="1" colspan="1">
+                                            <select class="form-control input-sm" id="filterTopic" name="TopicId" style="width:100%"><option value="">-- All --</option>
+<option value="23">Lab 101 - Practical Exam</option>
+<option value="40">C Basic automatic grading</option>
+<option value="42">C Basic Manual Grading</option>
+<option value="44">Lab101 - Final Exam</option>
+</select>
+                                        </td><td rowspan="1" colspan="1"><input class="form-control input-sm" style="width:100%; font-weight:normal" type="text" placeholder="Search Assignment Name"></td><td rowspan="1" colspan="1"><input class="form-control input-sm" style="width:100%; font-weight:normal" type="text" placeholder="Search Assignment Code"></td><td rowspan="1" colspan="1">
+                                            <select class="form-control input-sm" id="filterCategory" name="CategoryId" style="width:100%"><option value="">-- All --</option>
+<option value="3">Final Exam</option>
+<option value="2">Long Assignment</option>
+<option value="1">Short Assignment</option>
+</select>
+                                        </td><td rowspan="1" colspan="1"><input class="form-control input-sm" style="width:100%; font-weight:normal" type="text" placeholder="Search Line of Code"></td><td rowspan="1" colspan="1"><input class="form-control input-sm" style="width:100%; font-weight:normal" type="text" placeholder="Search Slots"></td><td rowspan="1" colspan="1">&nbsp;</td></tr>
+                                </thead>
+                                <tbody class="student-assignment-display"><tr role="row" class="odd selected"><td class=" text-right">1</td><td>C Basic Manual Grading</td><td>Simple Slot Machine. </td><td class="sorting_1">C.L.P0003</td><td>Long Assignment</td><td>120</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/129" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even selected"><td class=" text-right">2</td><td>C Basic Manual Grading</td><td>Hangman. </td><td class="sorting_1">C.L.P0006</td><td>Long Assignment</td><td>150</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/130" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">3</td><td>C Basic Manual Grading</td><td>Mastermind. </td><td class="sorting_1">C.L.P0007</td><td>Long Assignment</td><td>250</td><td>5</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/131" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">4</td><td>C Basic Manual Grading</td><td>Text Message Censoring. </td><td class="sorting_1">C.L.P0008</td><td>Long Assignment</td><td>185</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/132" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">5</td><td>C Basic Manual Grading</td><td>Memcached. </td><td class="sorting_1">C.L.P0010</td><td>Long Assignment</td><td>242</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/133" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">6</td><td>C Basic Manual Grading</td><td>Casino player. </td><td class="sorting_1">C.L.P0014</td><td>Long Assignment</td><td>150</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/134" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">7</td><td>C Basic Manual Grading</td><td>File Handling. </td><td class="sorting_1">C.L.P0018</td><td>Long Assignment</td><td>120</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/135" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">8</td><td>C Basic Manual Grading</td><td>Generate day of year, day of week and week of year from a string in date format</td><td class="sorting_1">C.L.P0021</td><td>Long Assignment</td><td>120</td><td>3</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/136" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">9</td><td>C Basic Manual Grading</td><td>Manage student</td><td class="sorting_1">C.L.P0022</td><td>Long Assignment</td><td>150</td><td>4</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/137" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">10</td><td>C Basic Manual Grading</td><td>Rewrite some basic functions in C: strcat, strcmp, strcpy, strncpy, strnset, strstr, strchr </td><td class="sorting_1">C.L.P0023</td><td>Long Assignment</td><td>160</td><td>4</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/138" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">11</td><td>C Basic Manual Grading</td><td>English – English dictionary </td><td class="sorting_1">C.L.P0024</td><td>Long Assignment</td><td>230</td><td>5</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/139" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">12</td><td>C Basic Manual Grading</td><td>Simulate ATM’s operation</td><td class="sorting_1">C.L.P0025</td><td>Long Assignment</td><td>200</td><td>5</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/140" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd selected"><td class=" text-right">13</td><td>C Basic Manual Grading</td><td>Reverse words in a string</td><td class="sorting_1">C.S.P0001</td><td>Short Assignment</td><td>50</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/141" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even selected"><td class=" text-right">14</td><td>C Basic Manual Grading</td><td>Program to convert number to word</td><td class="sorting_1">C.S.P0002</td><td>Short Assignment</td><td>80</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/142" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">15</td><td>C Basic Manual Grading</td><td>Program to insert new element into an existing array.</td><td class="sorting_1">C.S.P0003</td><td>Short Assignment</td><td>50</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/143" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">16</td><td>C Basic Manual Grading</td><td>Program to look up character that appears the most in a string.</td><td class="sorting_1">C.S.P0004</td><td>Short Assignment</td><td>40</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/144" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">17</td><td>C Basic Manual Grading</td><td>Print multiplication table for an input number</td><td class="sorting_1">C.S.P0005</td><td>Short Assignment</td><td>60</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/145" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">18</td><td>C Basic Manual Grading</td><td>Sort an array in ascending and descending order.</td><td class="sorting_1">C.S.P0006</td><td>Short Assignment</td><td>40</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/146" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">19</td><td>C Basic Manual Grading</td><td>Remove unnecessary blank in a string </td><td class="sorting_1">C.S.P0007</td><td>Short Assignment</td><td>30</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/147" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">20</td><td>C Basic Manual Grading</td><td>Look up all characters appear one time in a string.</td><td class="sorting_1">C.S.P0008</td><td>Short Assignment</td><td>45</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/148" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">21</td><td>C Basic Manual Grading</td><td>Look up the smallest element position in a real array.</td><td class="sorting_1">C.S.P0009</td><td>Short Assignment</td><td>30</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/149" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">22</td><td>C Basic Manual Grading</td><td>Delete duplicate elements in an array.</td><td class="sorting_1">C.S.P0010</td><td>Short Assignment</td><td>30</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/150" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">23</td><td>C Basic Manual Grading</td><td>Convert binary, octal and hexadecimal to decimal</td><td class="sorting_1">C.S.P0011</td><td>Short Assignment</td><td>100</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/151" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">24</td><td>C Basic Manual Grading</td><td>Data Analysis. </td><td class="sorting_1">C.S.P0013</td><td>Short Assignment</td><td>80</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/152" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">25</td><td>C Basic Manual Grading</td><td>Wedding Invitations</td><td class="sorting_1">C.S.P0015</td><td>Short Assignment</td><td>80</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/153" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">26</td><td>C Basic Manual Grading</td><td>Printing Payments and Calculating Total Expenditure. </td><td class="sorting_1">C.S.P0016</td><td>Short Assignment</td><td>49</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/154" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">27</td><td>C Basic Manual Grading</td><td>Fuel Economy. </td><td class="sorting_1">C.S.P0017</td><td>Short Assignment</td><td>39</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/155" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">28</td><td>C Basic Manual Grading</td><td>Management Hotel Room management. </td><td class="sorting_1">C.S.P0019</td><td>Short Assignment</td><td>49</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/156" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">29</td><td>C Basic Manual Grading</td><td>Grocery Store Database. </td><td class="sorting_1">C.S.P0020</td><td>Short Assignment</td><td>84</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/157" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">30</td><td>C Basic Manual Grading</td><td>Addition of odd/even numbers</td><td class="sorting_1">C.S.P0030 </td><td>Short Assignment</td><td>44</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/6" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">31</td><td>C Basic Manual Grading</td><td>Convert decimal to binary.</td><td class="sorting_1">C.S.P0031</td><td>Short Assignment</td><td>40</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/7" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">32</td><td>C Basic Manual Grading</td><td>Addition of digits in a natural number.</td><td class="sorting_1">C.S.P0032</td><td>Short Assignment</td><td>26</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/8" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">33</td><td>C Basic Manual Grading</td><td>Sum of decimal numbers.</td><td class="sorting_1">C.S.P0033</td><td>Short Assignment</td><td>36</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/9" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">34</td><td>C Basic Manual Grading</td><td>Reverse a string; convert to upper case and vice versa.</td><td class="sorting_1">C.S.P0034</td><td>Short Assignment</td><td>28</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/10" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">35</td><td>C Basic Manual Grading</td><td>Sum of 2 matrices</td><td class="sorting_1">C.S.P0035</td><td>Short Assignment</td><td>50</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/11" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">36</td><td>C Basic Manual Grading</td><td>Count the number of the appearance of letters in a string.</td><td class="sorting_1">C.S.P0036</td><td>Short Assignment</td><td>27</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/12" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">37</td><td>C Basic Manual Grading</td><td>Identify Square Numbers</td><td class="sorting_1">C.S.P0037</td><td>Short Assignment</td><td>36</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/13" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">38</td><td>C Basic Manual Grading</td><td>Reading a file.</td><td class="sorting_1">C.S.P0038</td><td>Short Assignment</td><td>39</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/14" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">39</td><td>C Basic Manual Grading</td><td>Date validation application</td><td class="sorting_1">C.S.P0039</td><td>Short Assignment</td><td>95</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/15" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">40</td><td>C Basic Manual Grading</td><td> ( Deposit interest application)</td><td class="sorting_1">C.S.P0040</td><td>Short Assignment</td><td>69</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/16" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">41</td><td>C Basic Manual Grading</td><td>Array Manipulations ( Min,max, even) </td><td class="sorting_1">C.S.P0041</td><td>Short Assignment</td><td>37</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/17" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">42</td><td>C Basic Manual Grading</td><td>Array Manipulations (Find, Sort,remove )</td><td class="sorting_1">C.S.P0043 </td><td>Short Assignment</td><td>120</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/19" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">43</td><td>C Basic Manual Grading</td><td> Array Manipulations (add, search, min max)</td><td class="sorting_1">C.S.P0044</td><td>Short Assignment</td><td>97</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/20" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">44</td><td>C Basic Manual Grading</td><td>String Array Manipulations ( in,out &amp; sort)</td><td class="sorting_1">C.S.P0045 </td><td>Short Assignment</td><td>32</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/21" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd"><td class=" text-right">45</td><td>C Basic Manual Grading</td><td>Basic Computation Practice - primes  &amp;  Fibonacci number </td><td class="sorting_1">C.S.P0046</td><td>Short Assignment</td><td>73</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/22" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="even"><td class=" text-right">46</td><td>C Basic Manual Grading</td><td>Array and string manipulations.</td><td class="sorting_1">C.S.P0047</td><td>Short Assignment</td><td>91</td><td>2</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/23" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr><tr role="row" class="odd selected"><td class=" text-right">47</td><td>C Basic Manual Grading</td><td>File reading – writing practice. </td><td class="sorting_1">C.S.P0048</td><td>Short Assignment</td><td>59</td><td>1</td><td><a href="http://10.22.127.127/Practice/AssignmentDetails/24" target="_blank" title="View Assignment Detail"><span class="glyphicon glyphicon-eye-open"></span></a></td></tr></tbody>
+                                <tfoot>
+                                    
+                                </tfoot>
+                            </table><div class="dataTables_paginate paging_simple_numbers" id="dtAddAssignment_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="dtAddAssignment_previous"><a href="http://10.22.127.127/Practice/Manage#" aria-controls="dtAddAssignment" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="http://10.22.127.127/Practice/Manage#" aria-controls="dtAddAssignment" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="dtAddAssignment_next"><a href="http://10.22.127.127/Practice/Manage#" aria-controls="dtAddAssignment" data-dt-idx="2" tabindex="0">Next</a></li></ul></div><div id="dtAddAssignment_processing" class="dataTables_processing panel panel-default" style="display: none;">Processing...</div></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./Practice Tracking System_files/datatable"></script>
+
+<script src="./Practice Tracking System_files/dataTables.select.min.js"></script>
+<script src="./Practice Tracking System_files/dataTables.rowReorder.min.js"></script>
+<script src="./Practice Tracking System_files/bootbox.min.js"></script>
+
+<script type="text/javascript">
+    var dtAddAssignment;
+    var dtCurrentAssignment;
+    $(document).ready(function () {
+        var studentid = 'fd4b1ab6-c4e7-49f4-8d62-a5d8db246356';
+
+        // Setup - add a text input to each footer cell
+        $('#dtAddAssignment tfoot td').each(function () {
+            var title = $.trim($('#dtAddAssignment thead th').eq($(this).index()).text());
+
+            if ($(this).html() == '') {
+                $(this).html('<input class="form-control input-sm" style="width:100%; font-weight:normal" type="text" placeholder="Search ' + title + '" />');
+            }
+        });
+
+        //Initialize the bottom table
+        dtAddAssignment = $('#dtAddAssignment').DataTable({
+            renderer: "bootstrap",
+            ajax: {
+                url: "/Practice/GetAssignmentToAddAjax/266/?studentId=" + studentid,
+                type: "GET"
+            },
+            serverSide: true,
+            stateSave: true,
+            stateDuration: -1,
+            responsive: false,
+            processing: true,
+            dom: "tipr",
+            autoWidth: false,
+            pageLength: 50,
+            info: false,
+            select: {
+                style: 'multi',
+                info: false
+            },
+            columns: [
+                {
+                    name: "Index",
+                    orderable: false,
+                    searchable: false,
+                    class: "text-right"
+                },
+                { name: "TopicId" },
+                {
+                    name: "Name"
+                },
+                { name: "AssignmentCode" },
+                { name: "CategoryId" },
+                { name: "LOC" },
+                { name: "Duration" },
+                {
+                    name: "Id",
+                    orderable: false,
+                    searchable: false,
+                    render: function (data, type, full, meta) {
+                        return '<a href="/Practice/AssignmentDetails/' + data + '" target="_blank" title="View Assignment Detail">'
+                            + '<span class="glyphicon glyphicon-eye-open"></span>'
+                            + '</a>';
+                    }
+                }
+            ],
+            order: [3, 'asc'],
+            initComplete: function (settings) {
+                this.api().rows().deselect();
+            }
+        });
+
+        $('#dtAddAssignment tfoot tr').insertAfter($('#dtAddAssignment thead tr'));
+
+        //Disable auto select (after Ajax reload) by DataTable.Select plugin
+        dtAddAssignment.off('preXhr.dt.dtSelect');
+
+        // Restore filters
+        var state = dtAddAssignment.state.loaded();
+        if (state) {
+            dtAddAssignment.columns().eq(0).each(function (colIdx) {
+                var colSearch = state.columns[colIdx].search;
+
+                if (colSearch.search) {
+                    $('input', dtAddAssignment.column(colIdx).footer()).val(colSearch.search);
+
+                    if (colIdx == 1) {
+                        $('#filterTopic').val(colSearch.search);
+                    }
+
+                    if (colIdx == 4) {
+                        $('#filterCategory').val(colSearch.search);
+                    }
+                }
+            });
+
+            dtAddAssignment.draw(false);
+        }
+
+        //Initialize Current Assignment Datatable
+        dtCurrentAssignment = $('#dtCurrentAssignment').DataTable({
+            renderer: "bootstrap",
+            ajax: {
+                url: "/Practice/GetCurrentStudentAssignmentsAjax/266/?studentId=" + studentid,
+                type: "POST"
+            },
+            serverside: true,
+            processing: true,
+            dom: "tipr",
+            responsive: true,
+            autoWidth: false,
+            paging: false,
+            info: false,
+            rowReorder: true,
+            columns: [
+                {
+                    name: "Index",
+                    class: "text-right"
+                },
+                { name: "TopicId", orderable: false },
+                { name: "Name", orderable: false },
+                { name: "AssignmentCode", orderable: false },
+                { name: "CategoryId", orderable: false },
+                { name: "LOC", orderable: false },
+                { name: "Duration", orderable: false },
+                {
+                    name: "Id",
+                    orderable: false,
+                    searchable: false,
+                    render: function (data, type, full, meta) {
+                        var status = data.split("_")[1];
+                        var id = data.split("_")[0];
+                        if (status == '4') {
+                            return '<a title="Delete Assignment" href=\"javascript:deleteConfirmation(' +
+                                id + ')\"><span class="glyphicon glyphicon-remove"></span></a>';
+                        } else {
+                            return '';
+                        }
+                    }
+                }
+            ]
+        });
+
+        //Apply search to filter
+        var search = $.fn.dataTable.util.throttle(
+            function (col, val) {
+                dtAddAssignment.column(col + ':name').search(val, true, false).draw();
+            }, 1000);
+
+        // Apply the search
+        dtAddAssignment.columns().eq(0).each(function (colIdx) {
+            var searchColumn = $.fn.dataTable.util.throttle(
+                function (val) {
+                    dtAddAssignment.column(colIdx).search(val, true, false).draw();
+                },
+            1000);
+            $('input', dtAddAssignment.column(colIdx).footer()).on('keyup change', function () {
+                searchColumn(this.value.replace(/;/g, "|"));
+            });
+        });
+
+        //Bind data to assignment list by topic Id
+        $('#filterTopic').change(function () {
+            dtAddAssignment.column('TopicId:name').search($(this).val().replace(/;/g, "|")).draw();
+        });
+
+        $('#filterCategory').change(function () {
+            dtAddAssignment.column('CategoryId:name').search($(this).val().replace(/;/g, "|")).draw();
+        });
+    });
+
+    $('#btnSelectAll').click(function () {
+        dtAddAssignment.rows().select();
+    });
+
+    $('#btnSelectNone').click(function () {
+        dtAddAssignment.rows().deselect();
+    });
+
+    $('#btnClearFilter').click(function () {
+        dtAddAssignment.search('').columns().search('').draw();
+    });
+
+    $('#btnAddSelected').click(function () {
+        var assignment_ids = [];
+        dtAddAssignment.rows('.selected').data().each(function (dat) {
+            assignment_ids.push(dat[7]);
+        });
+        $('#btnAddSelected').prop('disabled',true);
+        $.ajax({
+            url: '/Practice/Update',
+            type: 'POST',
+            data: { id: 266, assignmentIds: assignment_ids },
+            success: function (result) {
+                dtCurrentAssignment.ajax.reload().draw();
+                dtAddAssignment.draw();
+            }
+        });
+        $('#btnAddSelected').prop('disabled',false);
+    });
+
+    function deleteConfirmation(id) {
+        bootbox.dialog({
+            message: "Are you sure you want to delete this assignment?",
+            title: "Delete Assignment",
+            buttons: {
+                cancel: {
+                    label: "No",
+                    className: "btn-default",
+                    callback: function () {
+                        bootbox.hideAll();
+                    }
+                },
+                ok: {
+                    label: "Yes",
+                    className: "btn-primary",
+                    callback: function () {
+                        $('#studentAssignmentId').val(id);
+                        $('#frmDelete')[0].action = '/Practice/Delete';
+                        $('#frmDelete')[0].submit();
+                    }
+                }
+            }
+        });
+    }
+</script>
+
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 1.1.0
+            </div>
+            <strong>Copyright © 2015 <a href="http://www.fpt.edu.vn/">FPT University</a>.</strong> All rights reserved.
+        </footer>
+        <!-- /#page-wrapper -->
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Practice Tracking System_files/bootstrap"></script>
+
+    <script src="./Practice Tracking System_files/toastr.min.js" type="text/javascript"></script>
+    
+
+    <script type="text/javascript">
+        //Configure toastr
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "2000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+
+        var msg = "";
+
+        if (msg != "") {
+            toastr.success(msg);
+        }
+
+        //Clear the saved state of datatables other than the one in this Controller
+        if (typeof (Storage) !== "undefined") {
+            for (var i = 0, len = sessionStorage.length; i < len; i++) {
+                var key = sessionStorage.key(i);
+                var value = sessionStorage.getItem(key);
+
+                //Remove the saved state of other controller
+                if (key != null && key.indexOf('Practice') <= 0) {
+                    sessionStorage.removeItem(key);
+                }
+            }
+        }
+
+        var isAbsoluteURI = new RegExp('^(?:[a-z]+:)?//', 'i');
+
+        $.ajaxSetup({
+            beforeSend: function (xhr) {
+                if (!isAbsoluteURI.test(this.url)) {
+                    //only add header to relative URLs
+                    xhr.setRequestHeader(
+                       'x-RequestVerificationToken',
+                       $('<input name="__RequestVerificationToken" type="hidden" value="9-oEy3cZ7kzGDcsRDAas7jbUt62pVXHWSMhGSf5Ecl8Tpfz8D_BfHXdRpxkWD9vr2fbrlUbNP7hHc5K-ls1ZLMGxUqAl7u8RTtW77Se2kWqKjqha5R9PtOK38IxCdeJH0" />').val()
+                    );
+                }
+            }
+        });
+    </script>
+
+
+
+</body></html>
